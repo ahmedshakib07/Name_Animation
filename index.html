@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Imtiaz Ahmed</title>
+        <style type="text/css">
+            body{ 
+                background:black;
+            }
+            section{
+                height:100vh;
+            }
+            video{
+                object-fit: cover;
+                margin-left: 20px;
+            }
+            h4{
+                position:absolute;
+                top:25%;
+                left:10%;
+                color: #ddd;
+                font-size: 5em;
+                letter-spacing:0.2em;
+                text-align: center;
+            }
+            h4 span{
+                opacity:0;
+                display:inline-block;
+                animation:animate 1s linear forwards;
+            }
+            h5{
+                position:absolute;
+                top:22%;
+                left:50%;
+                color: #ddd;
+                font-size: 5em;
+                letter-spacing:0.2em;
+                text-align: center;
+            }
+            h5 span{
+                opacity:0;
+                display:inline-block;
+                animation:animate 1s linear forwards;
+            }
+            @keyframes animate {
+                0%{
+                    opacity:0;
+                    transform: rotateY(90deg);
+                    filter:blur(10px);
+                }
+                100%{
+                    opacity: 1;
+                    transform: rotateY(0deg);
+                    filter:blur(0);
+                }
+            }
+            h4 span:nth-child(1){
+                animation-delay:1s;
+            }
+            h4 span:nth-child(2){
+                animation-delay:2s;
+            }
+            h4 span:nth-child(3){
+                animation-delay:2.5s;
+            }
+            h4 span:nth-child(4){
+                animation-delay:3s;
+            }
+            h4 span:nth-child(5){
+                animation-delay:3.5s;
+            }
+            h4 span:nth-child(6){
+                animation-delay:4s;
+            }
+
+            
+            h5 span:nth-child(1){
+                animation-delay:4.5s;
+            }
+            h5 span:nth-child(2){
+                animation-delay:5s;
+            }
+            h5 span:nth-child(3){
+                animation-delay:5.5s;
+            }
+            h5 span:nth-child(4){
+                animation-delay:6s;
+            }
+            h5 span:nth-child(5){
+                animation-delay:6.5s;
+            }
+            </style>
+    </head>
+    <body>
+        <section>
+            <video src="smoke.mp4" autoplay muted></video>
+            <h4>
+                <span>I</span>
+                <span>M</span>
+                <span>T</span>
+                <span>I</span>
+                <span>A</span>
+                <span>Z</span>
+            </h4>
+            <h5>
+                <span>A</span>
+                <span>H</span>
+                <span>M</span>
+                <span>E</span>
+                <span>D</span>
+            </h5>
+        </section>
+    </body>
+</html>
